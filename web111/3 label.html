@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+  *{
+    margin:0;
+    padding:0;
+  }
+  h1:hover{
+    color:red;
+    cursor:pointer;
+
+  }
+input{
+  outline:none;
+}
+input:focus{
+  border: 2px solid red;
+}
+input[type="mail"]{
+  color:blue;
+}
+h1+p{
+color:aquamarine;
+
+}
+input[type="radio"] +label{
+  color:red ;
+}
+
+</style>
+</head>
+<body>
+
+
+  <h1>Contact Me</h1>
+  <p>Form fillup</p>
+  <form action="mailto:kumalnisha84@gmail.com?ccsample@gmail.com" method="post"enctype="text/plain">
+    <label for="name">Name:</label>
+    <input type="text"name="name"id="name"placeholder="name">
+    <br><br>
+    <label for="mail">E-mail:</label>
+    <input type="mail" name="mail" id="mail"placeholder="mail"required>
+    <br><br>
+    <label for="password">Password:</label>
+    <input type="password"name="password"id="password"placeholder="password">
+    <br><br>
+    <label for="gender">Genders:</label>
+    <label for="male">Male</label>
+    <input type="radio" name="gender" id="male"value="male">
+    <label for="female">Female</label>
+    <input type="radio" name="gender" id="female"value="female">
+    <br><br>
+
+    <label for="c">City</label>
+    <select name="city" id="c">
+      <option value="select">Select your city</option>
+      <option value="ktm">ktm</option>
+      <option value="Dang">Dang</option>
+    </select>
+
+    <br><br>
+  <label for="message">Feedback:</label>  
+  <br>
+<textarea name="message" id="" cols="30" rows="10"placeholder="please give your valuable feedback here"></textarea>
+<br>
+<input type="submit"value="submit">
+
+
+
+  </form>
+</body>
+</html>
