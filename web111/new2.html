@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .header{
+      padding: 20px;
+      border-bottom: 1px solid rgb(86, 80, 80);
+    }
+.web{
+  display: flex;
+  align-items: baseline;
+}
+.logo
+{
+  color: brown;
+}
+body{
+  background-color: rgb(199, 199, 244);
+  font-family: 'Oswald', sans-serif;
+}
+.web h1{
+ margin-left:10px
+}
+img{
+  border-top-left-radius: 40px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.grid-main{
+  padding: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows:300px 300px;
+  gap: 20px;
+}
+
+.features {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+h2{
+  padding:10px 0;
+}
+@media (max-width:1000px) {
+  .articles{
+    grid-column: span 3;
+  display: grid;
+  grid-template-columns:1fr;
+  }
+  
+}
+
+@media (max-width:800px) {
+  .articles,
+  .features{
+    grid-column: span 3;
+  display: grid;
+  grid-template-columns:1fr;
+  }
+  
+}
+
+  </style>
+</head>
+<body>
+  <!-- header -->
+  <div class="header">
+    <div class="web">
+      <i class="fa-2x fa-solid fa-blog logo "></i>
+      <h1>Some Gallary</h1></div>
+      </div>
+
+   <!-- main -->
+   <div class="grid-main">
+
+   <div class="features">
+    <img src="https://media.istockphoto.com/id/1445902069/photo/hands-holding-of-new-year-2023-silhouette-with-flying-of-free-bird-enjoying-nature-on-sunset.jpg?b=1&s=170667a&w=0&k=20&c=4kVGHI9vZcOSkW4BogN5bwLrtsQRYWzxGbqN7HQSQGo=" alt="">
+  
+    <div class="info">
+    <h2>Features</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias sit maxime officiis praesentium explicabo exercitationem deleniti fuga. Nemo atque voluptatem doloremque quos nulla beatae tempora optio in eaque pariatur! Odio, laborum quaerat! Aspernatur suscipit fugit provident error vero consequuntur eveniet esse praesentium quidem, animi sequi distinctio nulla. Ratione, molestiae?</p></div>
+  </div>
+   
+   
+   <div class="articles">
+      <img src="https://media.istockphoto.com/id/1448748343/photo/little-daughter-and-young-adult-mother-holding-each-other-hands-in-warm-gloves-on-nature.jpg?b=1&s=170667a&w=0&k=20&c=jb_LTRRFnb_b8BZr7DFjLdDcHv-GgH9ESXJi6PFL1vY=" alt="">
+      <div class="info">
+<h2>Article1</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae iusto dolorum deleniti itaque recusandae natus? Amet, laboriosam? Quae, ad. Commodi inventore ipsam impedit magni omnis obcaecati id labore doloribus laboriosam? Blanditiis earum culpa minus eius modi, nesciunt optio nulla, aperiam quia atque laudantium. Odio assumenda maiores totam praesentium earum!</p>
+      </div>
+   </div>
+
+   <div class="articles">
+    <img src="https://media.istockphoto.com/id/1446160188/photo/a-beautiful-bright-yellow-garden-perennial-flower-gaillardia.jpg?b=1&s=170667a&w=0&k=20&c=O0AhPYhqIKN1I9fbwUJR5SlzL4MWY-EyxrXVQFydGiE=" alt="">
+      <div class="info">
+        <h2>Article2</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae iusto dolorum deleniti itaque recusandae natus? Amet, laboriosam? Quae, ad. Commodi inventore ipsam impedit magni omnis obcaecati id labore doloribus laboriosam? Blanditiis earum culpa minus eius modi, nesciunt optio nulla, aperiam quia atque laudantium. Odio assumenda maiores totam praesentium earum!</p>
+      </div>
+   </div>
+
+   <div class="articles">
+    <img src="https://images.unsplash.com/photo-1600792111971-73becf782c31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHNvbWUlMjBmb3RvfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=700&q=60" alt="">
+      <div class="info">
+        <h2>Article3</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit vitae iusto dolorum deleniti itaque recusandae natus? Amet, laboriosam? Quae, ad. Commodi inventore ipsam impedit magni omnis obcaecati id labore doloribus laboriosam? Blanditiis earum culpa minus eius modi, nesciunt optio nulla, aperiam quia atque laudantium. Odio assumenda maiores totam praesentium earum!</p>
+      </div>
+   </div>
+
+  </div>
+</body>
+</html>
